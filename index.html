@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Fighter Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <h1>STREET FIGHTER SERIES</h1>
+
+    <div class="grid-container">
+
+        <div class="game-div" onclick="playGame('gba', 'roms/spider-man/Spider-Man3.gba')">
+            <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2018/09/Marvels-Spider-Man-PS4-4K-Image-Screenshot.jpg?w=1600&h=900&fit=crop" alt="Street Fighter Alpha 3">
+            <div class="div-details">
+                <h3>Spider Man 1</h3>
+                <span>GBA CORE</span>
+            </div>
+        </div>
+
+
+        <div class="game-div" onclick="playGame('gba', 'roms/street-fighter/Street-Fighter-Alpha3.gba')">
+            <img src="https://w0.peakpx.com/wallpaper/787/58/HD-wallpaper-street-fighter-ii-blanka-chun-li-dhalsim-e-honda-guile-ken-masters-m-bison-ryu-vega-zangief.jpg"
+                alt="Street Fighter II">
+            <div class="div-details">
+                <h3>Street Fighter II</h3>
+                <span></span>
+            </div>
+        </div>
+        <div class="game-div" onclick="playGame('gba', 'https://raw.githubusercontent.com/Hamzaazeem99/Real-Arcade/main/roms/Street-Fighter-Alpha3.gba')">
+            <img src="https://w0.peakpx.com/wallpaper/787/58/HD-wallpaper-street-fighter-ii-blanka-chun-li-dhalsim-e-honda-guile-ken-masters-m-bison-ryu-vega-zangief.jpg"
+                alt="Street Fighter II">
+            <div class="div-details">
+                <h3>Street Fighter II</h3>
+                <span></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="emulator-popup">
+        <div id="emulator-box">
+            <button class="close-btn" onclick="closeGame()">❌ QUIT</button>
+            <div id="game-player"></div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
